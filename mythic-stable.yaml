@@ -206,7 +206,7 @@ tasks:
   - action: download_github
     src: https://github.com/Mythic-Framework-Official/mythic-locations
     ref: main
-    dest: ./tmp/resources/mythic-lasers
+    dest: ./tmp/resources/mythic-locations
 
   - action: download_github
     src: https://github.com/Mythic-Framework-Official/mythic-loadscreen
