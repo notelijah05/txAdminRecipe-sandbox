@@ -18,6 +18,18 @@ This recipe is ideal for developers or server owners looking to get started with
 
 ---
 
+## 🚀 How to Use This Recipe in txAdmin
+
+1. Open your **txAdmin panel**.
+2. Go to the **Recipe Deployer** tab.
+3. Use the following URL to deploy this recipe: https://raw.githubusercontent.com/Rhodiniium/txAdminRecipe/main/mythic-stable.yaml
+4. Follow the prompts to configure your database credentials and deployment options.
+5. After deployment:
+   - Ensure dependencies (MongoDB, MariaDB, Node.js, and pnpm) are installed
+   - Update your `server.cfg`
+
+---
+
 ## ⚙️ Features
 
 - ✅ Automatic GitHub download of the latest Mythic Framework
@@ -39,18 +51,6 @@ This recipe is ideal for developers or server owners looking to get started with
 
 📘 More info and full documentation:  
 ➡️ [Mythic Framework GitHub](https://github.com/Mythic-Framework/mythic-framework)
-
----
-
-## 🚀 How to Use This Recipe in txAdmin
-
-1. Open your **txAdmin panel**.
-2. Go to the **Recipe Deployer** tab.
-3. Use the following URL to deploy this recipe: https://raw.githubusercontent.com/Rhodiniium/txAdminRecipe/main/mythic-stable.yaml
-4. Follow the prompts to configure your database credentials and deployment options.
-5. After deployment:
-   - Ensure dependencies (MongoDB, MariaDB, Node.js, and pnpm) are installed
-   - Update your `server.cfg`
 
 ---
 
