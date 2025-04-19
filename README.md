@@ -22,7 +22,7 @@ This recipe is ideal for developers or server owners looking to get started with
 
 1. Open your **txAdmin panel**.
 2. Go to the **Recipe Deployer** tab.
-3. Use the following URL to deploy this recipe: https://raw.githubusercontent.com/Rhodiniium/txAdminRecipe/main/mythic-stable.yaml
+3. Use the following URL to deploy this recipe: https://raw.githubusercontent.com/Mythic-Framework/txAdminRecipe/main/mythic-stable.yaml
 4. Follow the prompts to configure your database credentials and deployment options.
 5. After deployment:
    - Ensure dependencies (MongoDB, MariaDB, Node.js, and pnpm) are installed
