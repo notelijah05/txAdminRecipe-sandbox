@@ -83,7 +83,7 @@ Simply **restart the server once**, and the issues should be resolved automatica
 
 ## 📬 Feedback & Support
 
-If you encounter any issues with the recipe or want to contribute improvements, feel free to open an issue or PR on the [Mythic txAdmin Recipe GitHub](https://github.com/Rhodiniium/txAdminRecipe).
+If you encounter any issues with the recipe or want to contribute improvements, feel free to open an issue or PR on the [Mythic txAdmin Recipe GitHub](https://github.com/Mythic-Framework/txAdminRecipe).
 
 ---
 
