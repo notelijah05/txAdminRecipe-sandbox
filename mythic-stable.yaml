@@ -1,6 +1,6 @@
 $engine: 3
 $onesync: on
-name: Mythic-Framework
+name: Mythic Framework
 version: 1.0.0
 author: The Community
 description: Easy-to-use TXAdmin recipe for getting Mythic Framework up and running in minutes.
@@ -8,7 +8,7 @@ description: Easy-to-use TXAdmin recipe for getting Mythic Framework up and runn
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/Mythic-Framework/txAdminRecipe
+    src: https://github.com/mythic-framework/txAdminRecipe
     ref: main
     dest: ./tmp/mythic
 
@@ -17,360 +17,373 @@ tasks:
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/mythic/configs/example.resources.cfg
-    dest: ./configs/example.resources.cfg
-
-  - action: move_path
-    src: ./tmp/mythic/configs/resources.cfg
+    src: ./tmp/mythic/resources.cfg
     dest: ./configs/resources.cfg
 
   - action: move_path
     src: ./tmp/mythic/logo96.png
     dest: ./logo96.png
 
-  - action: move_path
-    src: ./tmp/mythic/resources/[cfx]
-    dest: ./resources/[cfx]
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-admin
-    ref: main
-    dest: ./tmp/resources/mythic-admin
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-animations
-    ref: main
-    dest: ./tmp/resources/mythic-animations
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-apartments    
-    ref: main
-    dest: ./tmp/resources/mythic-apartments
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-arcade    
-    ref: main
-    dest: ./tmp/resources/mythic-arcade
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-base    
-    ref: main
-    dest: ./tmp/resources/mythic-base
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-billboards
-    ref: main
-    dest: ./tmp/resources/mythic-billboards
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-blips
-    ref: main
-    dest: ./tmp/resources/mythic-blips
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-businesses
-    ref: main
-    dest: ./tmp/resources/mythic-businesses
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-casino
-    ref: main
-    dest: ./tmp/resources/mythic-casino
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-cctv
-    ref: main
-    dest: ./tmp/resources/mythic-cctv
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-characters
-    ref: main
-    dest: ./tmp/resources/mythic-characters
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-chat
-    ref: main
-    dest: ./tmp/resources/mythic-chat
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-commands
-    ref: main
-    dest: ./tmp/resources/mythic-commands
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-customs
-    ref: main
-    dest: ./tmp/resources/mythic-customs
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-damage
-    ref: main
-    dest: ./tmp/resources/mythic-damage
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-dealerships
-    ref: main
-    dest: ./tmp/resources/mythic-dealerships
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-doors
-    ref: main
-    dest: ./tmp/resources/mythic-doors
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-drugs
-    ref: main
-    dest: ./tmp/resources/mythic-drugs
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-escort
-    ref: main
-    dest: ./tmp/resources/mythic-escort
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-evidence
-    ref: main
-    dest: ./tmp/resources/mythic-evidence
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-finance
-    ref: main
-    dest: ./tmp/resources/mythic-finance
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-fitment
-    ref: main
-    dest: ./tmp/resources/mythic-fitment
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-fuel
-    ref: main
-    dest: ./tmp/resources/mythic-fuel
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-games
-    ref: main
-    dest: ./tmp/resources/mythic-games
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-hud
-    ref: main
-    dest: ./tmp/resources/mythic-hud
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-inventory
-    ref: main
-    dest: ./tmp/resources/mythic-inventory
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-ipl
-    ref: main
-    dest: ./tmp/resources/mythic-ipl
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-jail
-    ref: main
-    dest: ./tmp/resources/mythic-jail
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-jobs
-    ref: main
-    dest: ./tmp/resources/mythic-jobs
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-keybinds
-    ref: main
-    dest: ./tmp/resources/mythic-keybinds
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-labor
-    ref: main
-    dest: ./tmp/resources/mythic-labor
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-laptop
-    ref: main
-    dest: ./tmp/resources/mythic-laptop
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-lasers
-    ref: main
-    dest: ./tmp/resources/mythic-lasers
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-locations
-    ref: main
-    dest: ./tmp/resources/mythic-locations
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-loadscreen
-    ref: main
-    dest: ./tmp/resources/mythic-loadscreen
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-mdt
-    ref: main
-    dest: ./tmp/resources/mythic-mdt
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-mechanic
-    ref: main
-    dest: ./tmp/resources/mythic-mechanic
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-menu
-    ref: main
-    dest: ./tmp/resources/mythic-menu
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-objects
-    ref: main
-    dest: ./tmp/resources/mythic-objects
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-ped
-    ref: main
-    dest: ./tmp/resources/mythic-ped
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-pedinteraction
-    ref: main
-    dest: ./tmp/resources/mythic-pedinteraction
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-phone
-    ref: main
-    dest: ./tmp/resources/mythic-phone
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-police
-    ref: main
-    dest: ./tmp/resources/mythic-police
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-polyzone
-    ref: main
-    dest: ./tmp/resources/mythic-polyzone
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-properties
-    ref: main
-    dest: ./tmp/resources/mythic-properties
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-pwnzor
-    ref: main
-    dest: ./tmp/resources/mythic-pwnzor
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-queue
-    ref: main
-    dest: ./tmp/resources/mythic-queue
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-radar
-    ref: main
-    dest: ./tmp/resources/mythic-radar
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-radio
-    ref: main
-    dest: ./tmp/resources/mythic-radio
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-restaurant
-    ref: main
-    dest: ./tmp/resources/mythic-restaurant
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-robbery
-    ref: main
-    dest: ./tmp/resources/mythic-robbery
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-scenes
-    ref: main
-    dest: ./tmp/resources/mythic-scenes
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-sounds
-    ref: main
-    dest: ./tmp/resources/mythic-sounds
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-status
-    ref: main
-    dest: ./tmp/resources/mythic-status
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-sync
-    ref: main
-    dest: ./tmp/resources/mythic-sync
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-targeting
-    ref: main
-    dest: ./tmp/resources/mythic-targeting
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-taxi
-    ref: main
-    dest: ./tmp/resources/mythic-taxi
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-tow
-    ref: main
-    dest: ./tmp/resources/mythic-tow
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-vacation
-    ref: main
-    dest: ./tmp/resources/mythic-vacation
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-vehicles
-    ref: main
-    dest: ./tmp/resources/mythic-vehicles
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-visuals
-    ref: main
-    dest: ./tmp/resources/mythic-visuals
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-voip
-    ref: main
-    dest: ./tmp/resources/mythic-voip
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-weapons
-    ref: main
-    dest: ./tmp/resources/mythic-weapons
-
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-weed
-    ref: main
-    dest: ./tmp/resources/mythic-weed
-
-  - action: move_path
-    src: ./tmp/resources
-    dest: ./resources/[mythic]
-    overwrite: true
-   
   # Prepare Database
   - action: connect_database
   - action: query_database
     file: ./tmp/mythic/mythic.sql
 
+  # Defaults/Depenencies
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    subpath: resources
+    dest: ./resources/[cfx-default]
+  - action: remove_path
+    path: ./resources/[cfx-default]/[gameplay]/chat
+
+  - action: download_file
+    path: ./tmp/oxmysql.zip
+    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+  - action: unzip
+    dest: ./resources
+    src: ./tmp/oxmysql.zip
+
+  - action: download_file
+    path: ./tmp/screenshot-basic.zip
+    url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+  - action: unzip
+    dest: ./resources/screenshot-basic
+    src: ./tmp/screenshot-basic.zip
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
+  # Mythic Framework
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-admin
+    ref: main
+    dest: ./resources/[mythic]/mythic-admin
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-animations
+    ref: main
+    dest: ./resources/[mythic]/mythic-animations
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-apartments    
+    ref: main
+    dest: ./resources/[mythic]/mythic-apartments
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-arcade    
+    ref: main
+    dest: ./resources/[mythic]/mythic-arcade
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-base    
+    ref: main
+    dest: ./resources/[mythic]/mythic-base
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-billboards
+    ref: main
+    dest: ./resources/[mythic]/mythic-billboards
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-blips
+    ref: main
+    dest: ./resources/[mythic]/mythic-blips
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-businesses
+    ref: main
+    dest: ./resources/[mythic]/mythic-businesses
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-casino
+    ref: main
+    dest: ./resources/[mythic]/mythic-casino
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-cctv
+    ref: main
+    dest: ./resources/[mythic]/mythic-cctv
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-characters
+    ref: main
+    dest: ./resources/[mythic]/mythic-characters
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-chat
+    ref: main
+    dest: ./resources/[mythic]/mythic-chat
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-commands
+    ref: main
+    dest: ./resources/[mythic]/mythic-commands
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-customs
+    ref: main
+    dest: ./resources/[mythic]/mythic-customs
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-damage
+    ref: main
+    dest: ./resources/[mythic]/mythic-damage
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-dealerships
+    ref: main
+    dest: ./resources/[mythic]/mythic-dealerships
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-doors
+    ref: main
+    dest: ./resources/[mythic]/mythic-doors
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-drugs
+    ref: main
+    dest: ./resources/[mythic]/mythic-drugs
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-escort
+    ref: main
+    dest: ./resources/[mythic]/mythic-escort
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-evidence
+    ref: main
+    dest: ./resources/[mythic]/mythic-evidence
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-finance
+    ref: main
+    dest: ./resources/[mythic]/mythic-finance
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-fitment
+    ref: main
+    dest: ./resources/[mythic]/mythic-fitment
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-fuel
+    ref: main
+    dest: ./resources/[mythic]/mythic-fuel
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-games
+    ref: main
+    dest: ./resources/[mythic]/mythic-games
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-hud
+    ref: main
+    dest: ./resources/[mythic]/mythic-hud
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-inventory
+    ref: main
+    dest: ./resources/[mythic]/mythic-inventory
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-ipl
+    ref: main
+    dest: ./resources/[mythic]/mythic-ipl
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-jail
+    ref: main
+    dest: ./resources/[mythic]/mythic-jail
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-jobs
+    ref: main
+    dest: ./resources/[mythic]/mythic-jobs
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-keybinds
+    ref: main
+    dest: ./resources/[mythic]/mythic-keybinds
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-labor
+    ref: main
+    dest: ./resources/[mythic]/mythic-labor
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-laptop
+    ref: main
+    dest: ./resources/[mythic]/mythic-laptop
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-lasers
+    ref: main
+    dest: ./resources/[mythic]/mythic-lasers
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-locations
+    ref: main
+    dest: ./resources/[mythic]/mythic-locations
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-loadscreen
+    ref: main
+    dest: ./resources/[mythic]/mythic-loadscreen
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-mdt
+    ref: main
+    dest: ./resources/[mythic]/mythic-mdt
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-mechanic
+    ref: main
+    dest: ./resources/[mythic]/mythic-mechanic
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-menu
+    ref: main
+    dest: ./resources/[mythic]/mythic-menu
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-objects
+    ref: main
+    dest: ./resources/[mythic]/mythic-objects
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-ped
+    ref: main
+    dest: ./resources/[mythic]/mythic-ped
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-pedinteraction
+    ref: main
+    dest: ./resources/[mythic]/mythic-pedinteraction
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-phone
+    ref: main
+    dest: ./resources/[mythic]/mythic-phone
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-police
+    ref: main
+    dest: ./resources/[mythic]/mythic-police
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-polyzone
+    ref: main
+    dest: ./resources/[mythic]/mythic-polyzone
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-properties
+    ref: main
+    dest: ./resources/[mythic]/mythic-properties
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-pwnzor
+    ref: main
+    dest: ./resources/[mythic]/mythic-pwnzor
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-queue
+    ref: main
+    dest: ./resources/[mythic]/mythic-queue
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-radar
+    ref: main
+    dest: ./resources/[mythic]/mythic-radar
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-radio
+    ref: main
+    dest: ./resources/[mythic]/mythic-radio
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-restaurant
+    ref: main
+    dest: ./resources/[mythic]/mythic-restaurant
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-robbery
+    ref: main
+    dest: ./resources/[mythic]/mythic-robbery
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-scenes
+    ref: main
+    dest: ./resources/[mythic]/mythic-scenes
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-sounds
+    ref: main
+    dest: ./resources/[mythic]/mythic-sounds
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-status
+    ref: main
+    dest: ./resources/[mythic]/mythic-status
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-sync
+    ref: main
+    dest: ./resources/[mythic]/mythic-sync
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-targeting
+    ref: main
+    dest: ./resources/[mythic]/mythic-targeting
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-taxi
+    ref: main
+    dest: ./resources/[mythic]/mythic-taxi
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-tow
+    ref: main
+    dest: ./resources/[mythic]/mythic-tow
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-vacation
+    ref: main
+    dest: ./resources/[mythic]/mythic-vacation
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-vehicles
+    ref: main
+    dest: ./resources/[mythic]/mythic-vehicles
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-visuals
+    ref: main
+    dest: ./resources/[mythic]/mythic-visuals
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-voip
+    ref: main
+    dest: ./resources/[mythic]/mythic-voip
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-weapons
+    ref: main
+    dest: ./resources/[mythic]/mythic-weapons
+
+  - action: download_github
+    src: https://github.com/mythic-framework/mythic-weed
+    ref: main
+    dest: ./resources/[mythic]/mythic-weed
+   
   # Clean up
   - action: remove_path
     path: ./tmp
