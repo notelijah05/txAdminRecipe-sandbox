@@ -44,6 +44,16 @@ tasks:
     dest: ./resources
     src: ./tmp/oxmysql.zip
 
+  - action: download_file
+    path: ./tmp/screenshot-basic.zip
+    url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+  - action: unzip
+    dest: ./resources/screenshot-basic
+    src: ./tmp/screenshot-basic.zip
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
   # Mythic Framework
   - action: download_github
     src: https://github.com/mythic-framework/mythic-admin
